@@ -120,13 +120,13 @@ object MultipleMinVerilogProducer extends App {
 
   val DEFAULT_N_PORT = 8
   val DEFAULT_INPUT_W = 32
-  val DEFAULT_FIFO_DEPTH = 64
+  val DEFAULT_FIFO_DEPTH = 16
 
   val chiselStage = new chisel3.stage.ChiselStage()
 
   val N_PORT_ARRAY = Array(DEFAULT_N_PORT, 16, 32, 64, 128)
   val INPUT_W_ARRAY = Array(DEFAULT_INPUT_W, 64, 128, 256, 512)
-  val FIFO_DEPTH_ARRAY = Array(DEFAULT_FIFO_DEPTH, 128, 256, 512, 1024)
+  val FIFO_DEPTH_ARRAY = Array(4, 8, 16, 32, 64, 128, 256)
 
   // Variation of Nb. Ports
   for (idx <- 0 until N_PORT_ARRAY.length){
@@ -152,6 +152,50 @@ object MultipleMinVerilogProducer extends App {
   for (idx <- 0 until FIFO_DEPTH_ARRAY.length){
 
     val TARGET_DIR = "./verilog/min_verilog_8_32_".concat(FIFO_DEPTH_ARRAY(idx).toString)
+
+    chiselStage.emitVerilog(
+      new MultistageInterconnectionNetwork(DEFAULT_N_PORT, DEFAULT_INPUT_W, FIFO_DEPTH_ARRAY(idx)),
+      Array("--target-dir", TARGET_DIR));
+  }
+
+}
+
+object MultipleMinVerilogProducerPaper extends App {
+
+  val chiselStage = new chisel3.stage.ChiselStage()
+
+  val DEFAULT_N_PORT = 8
+  val DEFAULT_INPUT_W = 32
+  val DEFAULT_FIFO_DEPTH = 16
+
+  val N_PORT_ARRAY = Array(4, 8, 16, 32, 64, 128)
+  val INPUT_W_ARRAY = Array(DEFAULT_INPUT_W, 64, 128, 256, 512, 1024)
+  val FIFO_DEPTH_ARRAY = Array(4, 8, 16, 32, 64, 128, 256, 512, 1024)
+
+  // Variation of Nb. Ports
+  for (idx <- 0 until N_PORT_ARRAY.length){
+
+    val TARGET_DIR = "./verilog/paper/min_verilog_".concat(N_PORT_ARRAY(idx).toString).concat("_").concat(DEFAULT_INPUT_W.toString).concat("_").concat(DEFAULT_FIFO_DEPTH.toString)
+
+    chiselStage.emitVerilog(
+      new MultistageInterconnectionNetwork(N_PORT_ARRAY(idx), DEFAULT_INPUT_W, DEFAULT_FIFO_DEPTH),
+      Array("--target-dir", TARGET_DIR));
+  }
+
+  // Variation of Port Width
+  for (idx <- 0 until INPUT_W_ARRAY.length){
+
+    val TARGET_DIR = "./verilog/paper/min_verilog_".concat(DEFAULT_N_PORT.toString).concat("_").concat(INPUT_W_ARRAY(idx).toString).concat("_").concat(DEFAULT_FIFO_DEPTH.toString)
+
+    chiselStage.emitVerilog(
+      new MultistageInterconnectionNetwork(DEFAULT_N_PORT, INPUT_W_ARRAY(idx), DEFAULT_FIFO_DEPTH),
+      Array("--target-dir", TARGET_DIR));
+  }
+
+  // Variation of FIFO Depth
+  for (idx <- 0 until FIFO_DEPTH_ARRAY.length){
+
+    val TARGET_DIR = "./verilog/paper/min_verilog_".concat(DEFAULT_N_PORT.toString).concat("_").concat(DEFAULT_INPUT_W.toString).concat("_").concat(FIFO_DEPTH_ARRAY(idx).toString)
 
     chiselStage.emitVerilog(
       new MultistageInterconnectionNetwork(DEFAULT_N_PORT, DEFAULT_INPUT_W, FIFO_DEPTH_ARRAY(idx)),
