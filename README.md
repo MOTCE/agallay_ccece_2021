@@ -1,37 +1,16 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
-***
-***
-***
-*** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="380px" height="156px">
+    <img src="images/logo.jpg" alt="Logo" width="380px" height="156px">
   </a>
 
-  <h3 align="center">Simple Multistage Interconnection Network (MIN) implementation using VHDL</h3>
+  <h3 align="center">Multistage Interconnection Network (MIN) implementation using VHDL and Chisel, presented at the CCECE 2021 Conference.</h3>
 
   <p align="center">
-    This project is the VHDL implementation of a simple Multistage Interconnection Network. The project was built within the scope of Polytechnique Montreal's UPIR award. 
+    This project is the VHDL and Chisel implementation of a Multistage Interconnection Network. The project was built within the scope of Polytechnique Montreal's UPIR scholarship award. 
   </p>
 </p>
 
@@ -64,6 +43,10 @@
 
 ## About The Project
 
+This project is organized as follow : src folder contains two folders. Each one contains src files of Chisel/VHDL implementation of the studied design. You can find the whole MIN in the .vhd / .scala file located at the root of the vhdl / chisel folder.
+
+Components can be found inside the components folder.
+
 ### Built With
 
 - [Active-HDL (Student version)](https://www.aldec.com/en)
@@ -73,36 +56,44 @@
 
 ## Getting Started
 
+VHDL:
+You should build either a Vivado project or Active HDL project and link every VHDL file to the project in order to compile the Multistage Interconnection Network module.
+
+Chisel:
+In order to compile and produce Verilog or write tests with given files, you should have installed all the requisites from https://www.chisel-lang.org/. You should pay attention to linking between .scala files since the repositories structure does not reflects the one used for development purposes.
+
 ### Prerequisites
+
+Any VHDL compiler for .vhd files.
+SBT for Scala compilation. IntelliJ is greatly recommended for development purposes.
 
 ### Installation
 
-<!-- USAGE EXAMPLES -->
+Chisel:
+Please refer to https://github.com/schoeberl/chisel-book for more details about getting started into Chisel and https://github.com/freechipsproject/chisel-template for starting a simple Chisel project. You can drag and drop src files from this repo once you are done setting up a Chisel project. You will find useful command lines in Chisel Book.
 
 ## Usage
 
-<!-- CONTRIBUTING -->
+Use this project for educational purposes.
 
 ## Contributing
 
-<!-- LICENSE -->
+No contributions are expected for this project.
 
 ## License
 
-<!-- CONTACT -->
+MIT Licence - Copyright (c) 2021 MOTCE
 
 ## Contact
 
 Andy GALLAY - andy.gallay@polymtl.ca
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
 
 - [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
-- [Federico Montano (PhD student)](https://www.researchgate.net/profile/Federico-Montano)
+- [Federico Montano (PhD candidate)](https://www.researchgate.net/profile/Federico-Montano)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
