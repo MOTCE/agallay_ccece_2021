@@ -16,10 +16,6 @@ class Fifo(N: Int = 16, width: Int = 32) extends Module{
   val nb_valuesReg = RegInit(0.U(log2Ceil(N+1).W))
   val read_addReg = RegInit(0.U(log2Ceil(N+1).W))
   val write_addReg = RegInit(0.U(log2Ceil(N+1).W))
-
-  // Ne pas reset la memoire (seulement l'idx)
-  //  val memoryReg = RegInit(VecInit(Seq.fill(N)(0.U(width.W))))
-  //  val memoryReg = Reg(Vec(N, Bits(width.W)));
   val memoryReg = Mem(N, Bits(width.W));
   val doutBuffer = RegInit(0.U(width.W))
 
@@ -44,10 +40,8 @@ class Fifo(N: Int = 16, width: Int = 32) extends Module{
     }.otherwise{
       read_addReg := read_addReg + 1.U
     }
-    // io.dout := memoryReg(read_addReg)
     doutBuffer := memoryReg.read(read_addReg)
   }.otherwise{
-    // io.dout := 0.U
     doutBuffer := 0.U
   }
   io.dout := doutBuffer
