@@ -50,15 +50,14 @@ Components can be found inside the components folder.
 
 ### Built With
 
-- [Active-HDL (Student version)](https://www.aldec.com/en)
-- [Vivado (Student version)](https://www.xilinx.com/products/design-tools/vivado.html)
+- [Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 VHDL:
-You should build either a Vivado project or Active HDL project and link every VHDL file to the project in order to compile the Multistage Interconnection Network module.
+You should build a Vivado project and link every VHDL file to the project in order to compile the Multistage Interconnection Network module.
 
 Chisel:
 In order to compile and produce Verilog or write tests with given files, you should have installed all the requisites from https://www.chisel-lang.org/. You should pay attention to linking between .scala files since the repositories structure does not reflects the one used for development purposes.
