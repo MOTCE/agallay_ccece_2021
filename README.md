@@ -92,7 +92,6 @@ Andy GALLAY - andy.gallay@polymtl.ca
 
 ## Acknowledgements
 
-- [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
 - [Federico Montano (PhD candidate)](https://www.researchgate.net/profile/Federico-Montano)
 
 <!-- MARKDOWN LINKS & IMAGES -->
