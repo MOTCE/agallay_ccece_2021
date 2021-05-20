@@ -35,6 +35,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -89,6 +90,9 @@ MIT Licence - Copyright (c) 2021 MOTCE
 Andy GALLAY - andy.gallay@polymtl.ca
 
 <!-- ACKNOWLEDGEMENTS -->
+
+## Contributors
+- [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
 
 ## Acknowledgements
 
