@@ -50,7 +50,7 @@ Components can be found inside the components folder.
 
 ### Built With
 
-- [Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
+- [Vivado Design Suite](https://www.xilinx.com/products/design-tools/vivado.html)
 
 <!-- GETTING STARTED -->
 
@@ -82,7 +82,7 @@ No contributions are expected for this project.
 
 ## License
 
-MIT Licence - Copyright (c) 2021 MOTCE
+[MIT Licence](/LICENSE) - Copyright (c) 2021 MOTCE
 
 ## Contact
 
