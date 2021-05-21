@@ -7,10 +7,10 @@
     <img src="images/logo.jpg" alt="Logo" width="380px" height="156px">
   </a>
 
-  <h3 align="center">Multistage Interconnection Network (MIN) implementation using VHDL and Chisel, presented at the CCECE 2021 Conference.</h3>
+  <h3 align="center">Multistage interconnection network (MIN) implementation using VHDL and Chisel, presented at the CCECE 2021 Conference.</h3>
 
   <p align="center">
-    This project is the VHDL and Chisel implementation of a Multistage Interconnection Network. The project was built within the scope of Polytechnique Montreal's UPIR scholarship award. 
+    This project is the VHDL and Chisel implementation of a multistage interconnection network. The project was built within the scope of Polytechnique Montreal's UPIR scholarship award. 
   </p>
 </p>
 
@@ -35,6 +35,7 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
+    <li><a href="#contributors">Contributors</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
@@ -49,15 +50,14 @@ Components can be found inside the components folder.
 
 ### Built With
 
-- [Active-HDL (Student version)](https://www.aldec.com/en)
-- [Vivado (Student version)](https://www.xilinx.com/products/design-tools/vivado.html)
+- [Vivado](https://www.xilinx.com/products/design-tools/vivado.html)
 
 <!-- GETTING STARTED -->
 
 ## Getting Started
 
 VHDL:
-You should build either a Vivado project or Active HDL project and link every VHDL file to the project in order to compile the Multistage Interconnection Network module.
+You should build a Vivado project and link every VHDL file to the project in order to compile the Multistage Interconnection Network module.
 
 Chisel:
 In order to compile and produce Verilog or write tests with given files, you should have installed all the requisites from https://www.chisel-lang.org/. You should pay attention to linking between .scala files since the repositories structure does not reflects the one used for development purposes.
@@ -90,9 +90,11 @@ Andy GALLAY - andy.gallay@polymtl.ca
 
 <!-- ACKNOWLEDGEMENTS -->
 
+## Contributors
+- [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
+
 ## Acknowledgements
 
-- [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
 - [Federico Montano (PhD candidate)](https://www.researchgate.net/profile/Federico-Montano)
 
 <!-- MARKDOWN LINKS & IMAGES -->
