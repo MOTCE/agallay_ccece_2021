@@ -74,7 +74,7 @@ Please refer to https://github.com/schoeberl/chisel-book for more details about 
 
 ## Usage
 
-Use this project for educational purposes.
+Use this project for any purposes.
 
 ## Contributing
 
