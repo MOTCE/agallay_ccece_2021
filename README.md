@@ -62,6 +62,8 @@ You should build a Vivado project and link every VHDL file to the project in ord
 Chisel:
 In order to compile and produce Verilog or write tests with given files, you should have installed all the requisites from https://www.chisel-lang.org/. You should pay attention to linking between .scala files since the repositories structure does not reflects the one used for development purposes.
 
+A Chisel project contains two folders: main and test. Each folder contains a subfolder named scala. You should put src/chisel/Components and both MultistageInterconnectionNetwork into main/scala and src/chisel/Testers into test/scala.
+
 ### Prerequisites
 
 Any VHDL compiler for .vhd files.
