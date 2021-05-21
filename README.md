@@ -93,7 +93,7 @@ Andy GALLAY - andy.gallay@polymtl.ca
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Contributors
-- [Pr. Tarek Ould Bachir (PhD)](https://www.researchgate.net/profile/Tarek-Ould-Bachir)
+- [Pr. Tarek Ould Bachir (PhD)](https://www.polymtl.ca/expertises/ould-bachir-tarek)
 
 ## Acknowledgements
 
