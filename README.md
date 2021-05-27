@@ -44,9 +44,7 @@
 
 ## About The Project
 
-This project is organized as follow : [src](./src) folder contains two folders. Each one contains src files of Chisel/VHDL implementation of the studied design. You can find the whole MIN in the .vhd/.scala file located at the root of the [vhdl](./src/vhdl)/[chisel](./src/chisel) folders.
-
-Components can be found inside the components folder.
+This project is organized as follow : [src](./src) folder contains two folders. Each one contains src files of Chisel/VHDL implementation of the studied design. You can find the whole MIN in the .vhd/.scala file located at the root of the [vhdl](./src/vhdl)/[chisel](./src/chisel) folders. Components (fifo, fork, selector, switch) can be found inside the Components folders ([vhdl](./src/vhdl/Components)/[chisel](./src/chisel/Components)).
 
 ### Built With
 
