@@ -10,7 +10,7 @@
   <h3 align="center">Multistage interconnection network (MIN) implementation using VHDL and Chisel, presented at the CCECE 2021 Conference.</h3>
 
   <p align="center">
-    This project is the VHDL and Chisel implementation of a multistage interconnection network. The project was built within the scope of Polytechnique Montreal's UPIR scholarship award. 
+    This project is the VHDL and Chisel implementation of a multistage interconnection network. The project was built within the scope of Polytechnique Montreal's UPIR Scholarship Award. 
   </p>
 </p>
 
@@ -44,7 +44,7 @@
 
 ## About The Project
 
-This project is organized as follow : src folder contains two folders. Each one contains src files of Chisel/VHDL implementation of the studied design. You can find the whole MIN in the .vhd / .scala file located at the root of the vhdl / chisel folder.
+This project is organized as follow : [src](./src) folder contains two folders. Each one contains src files of Chisel/VHDL implementation of the studied design. You can find the whole MIN in the .vhd/.scala file located at the root of the [vhdl](./src/vdhl)/[chisel](./src/chisel) folders.
 
 Components can be found inside the components folder.
 
